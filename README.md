@@ -73,3 +73,16 @@ duplicate the post-scraping and language filtering steps in case they were perfo
 
 Get statistics and plots from the data, such as the number of entries, the number of tokens, token length distribution,
 domain distribution, filtering reasons, etc.
+
+## Citation
+
+```bibtex
+@misc{simplício2026amaliatechnicalreportfully,
+      title={AMALIA Technical Report: A Fully Open Source Large Language Model for European Portuguese}, 
+      author={Afonso Simplício and Gonçalo Vinagre and Miguel Moura Ramos and Diogo Tavares and Rafael Ferreira and Giuseppe Attanasio and Duarte M. Alves and Inês Calvo and Inês Vieira and Rui Guerra and James Furtado and Beatriz Canaverde and Iago Paulo and Vasco Ramos and Diogo Glória-Silva and Miguel Faria and Marcos Treviso and Daniel Gomes and Pedro Gomes and David Semedo and André Martins and João Magalhães},
+      year={2026},
+      eprint={2603.26511},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2603.26511}, 
+}
