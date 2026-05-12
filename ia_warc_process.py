@@ -80,9 +80,9 @@ if __name__ == '__main__':
             limit=args.limit if args.limit > 0 else None,
         ),
         LambdaFilter(lambda doc: (doc_url := doc.metadata.get('url')) is not None and
-                                 ('.pt/' in doc_url or '/pt/' in doc_url or '/pt-' in doc_url or
-                                  '/pt_' in doc_url or doc_url.endswith('/pt') or doc_url.endswith('.pt'))
-                                 and ('/pt-br' not in doc_url and '/pt_br/' not in doc_url)  # Exclude Brazilian Portuguese
+                                 ('/pt-br' not in doc_url and '/pt_br/' not in doc_url
+                                  and '.com/br' not in doc_url and '.br' not in doc_url and '/br/' not in doc_url
+                                  )
                      ),
         TrafilaturaMetadata(favour_precision=True, timeout=30),
         JsonlWriter(args.output_dir),
