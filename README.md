@@ -1,3 +1,19 @@
+<div align="center">
+
+<img src=src="https://github.com/AMALIA-LLM/amalia-llm.github.io/blob/main/source/_static/logo/logo-color-black.png?raw=true" alt="AMALIA" width="300"/>
+
+<br/>
+
+**A Fully Open Large Language Model for European Portuguese**
+
+[![Website](https://img.shields.io/badge/Website-amaliallm.pt-blue)](https://amaliallm.pt/)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-amalia--llm-yellow)](https://huggingface.co/amalia-llm)
+[![Paper](https://img.shields.io/badge/Paper-Technical%20Report-red?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.26511)
+ 
+</div>
+
+---
+
 # ArquivoPT Data Extraction
 
 Code with the pipeline to extract, process, filter and deduplicate data from ArquivoPT.
