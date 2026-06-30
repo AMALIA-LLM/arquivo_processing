@@ -1,10 +1,14 @@
 <div align="center">
 
-<img src="https://github.com/AMALIA-LLM/amalia-llm.github.io/blob/main/source/_static/logo/logo-color-black.png?raw=true" alt="AMALIA" width="300"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AMALIA-LLM/amalia-llm.github.io/blob/main/source/_static/logo/logo-color-white.png?raw=true">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/AMALIA-LLM/amalia-llm.github.io/blob/main/source/_static/logo/logo-color-black.png?raw=true">
+  <img src="https://github.com/AMALIA-LLM/amalia-llm.github.io/blob/main/source/_static/logo/logo-color-black.png?raw=true" alt="AMALIA" width="300"/>
+</picture> 
 
 <br/>
 
-**A Fully Open Large Language Model for European Portuguese**
+**A Native European Portuguese Open-Source Vision and Language Model**
 
 [![Website](https://img.shields.io/badge/Website-amaliallm.pt-blue)](https://amaliallm.pt/)
 [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-amalia--llm-yellow)](https://huggingface.co/amalia-llm)
