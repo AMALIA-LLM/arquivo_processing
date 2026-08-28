@@ -13,7 +13,7 @@ from datatrove.pipeline.filters import (
 from datatrove.utils.typeshelper import Languages
 from datatrove.executor import MareNostrumExecutor
 from datatrove.pipeline.post_scraping import PostScraper
-import words
+from utils import words
 
 
 def build_pipeline(input_dir, output_dir):

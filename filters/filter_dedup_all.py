@@ -21,7 +21,7 @@ from datatrove.pipeline.dedup.minhash import (
     MinhashDedupCluster,
     MinhashDedupFilter,
 )
-import words
+from utils import words
 import argparse
 import subprocess
 import time

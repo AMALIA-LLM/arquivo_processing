@@ -41,10 +41,10 @@ Download the CDXJ files from the [CDXJ List](https://arquivo.pt/datasets/cdxj/),
 have pt domains, and then get the html of the pages using the API. Finally, scrape the html to extract the data. This
 method is slow, taking 3-4 days to process a collection with 20 million entries after filtering.
 
-- `filter_cdxj.py`: Filter the CDXJ files' entries to get only the ones with urls with the desired domains (pt domains,
+- `cdxj_processing/filter_cdxj.py`: Filter the CDXJ files' entries to get only the ones with urls with the desired domains (pt domains,
   mainly);
-- `cdxj_get_html.py`: Request the ArquivoPT API for the html of the pages using the filtered CDXJ files;
-- `scraper.py`: Scrape the html to extract the text data;
+- `cdxj_processing/cdxj_get_html.py`: Request the ArquivoPT API for the html of the pages using the filtered CDXJ files;
+- `cdxj_processing/scraper.py`: Scrape the html to extract the text data;
 
 ### WARC Processing
 
@@ -55,13 +55,11 @@ For this approach, we use our version of the [Datatrove library](https://github.
 HuggingFace, which is optimized for our needs. Be careful that depending on the collection you may have to change the
 `WarcReader` parameters, as the collections may have different file structures.
 
-**Internet Archive**
+- `warc_process`: Extract the text from the downloaded WARC files;
 
-Download the WARC files from
-the [Internet Archive](https://archive.org/details/@daniel_gomes?and%5B%5D=collection%3A%22portuguese-web-archive%22)
-and process them.
+Sources to download the WARC files from:
 
-- `ia_warc_process`: Extract the text from the WARC files downloaded from the Internet Archive;
+- **[Internet Archive](https://archive.org/details/@daniel_gomes?and%5B%5D=collection%3A%22portuguese-web-archive%22)**
 
 ## Filtering and Deduplication
 
@@ -85,7 +83,7 @@ After collecting a significant amount of data and tokens, perform a deduplicatio
    duplicate
    entries across all collections;
 
-Alternatively, the scripts `filter_dedup_all.py` and `classify_all.py` can be used to batch filter, 
+Alternatively, the scripts `filters/filter_dedup_all.py` and `filters/classify_all.py` can be used to batch filter, 
 deduplicate and classify a directory of collections. Pay attention to not 
 duplicate the post-scraping and language filtering steps in case they were performed during the extraction step.
 
