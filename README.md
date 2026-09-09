@@ -95,6 +95,16 @@ domain distribution, filtering reasons, etc.
 ## Citation
 
 ```bibtex
+@misc{vinagre2026fineptptwebhighquality,
+      title={Fine PT-PT Web: A High-Quality 41 Billion Tokens Data Collection of the European Portuguese Web}, 
+      author={Gonçalo Vinagre and Rui Pedro Guerra and Pedro Gomes and Miguel Moura Ramos and Duarte Miguel Alves and Afonso Simplício and Diogo Tavares and David Semedo and Daniel Gomes and João Magalhães},
+      year={2026},
+      eprint={2609.07699},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2609.07699}, 
+}
+
 @misc{simplício2026amaliatechnicalreportfully,
       title={AMALIA Technical Report: A Fully Open Source Large Language Model for European Portuguese}, 
       author={Afonso Simplício and Gonçalo Vinagre and Miguel Moura Ramos and Diogo Tavares and Rafael Ferreira and Giuseppe Attanasio and Duarte M. Alves and Inês Calvo and Inês Vieira and Rui Guerra and James Furtado and Beatriz Canaverde and Iago Paulo and Vasco Ramos and Diogo Glória-Silva and Miguel Faria and Marcos Treviso and Daniel Gomes and Pedro Gomes and David Semedo and André Martins and João Magalhães},
