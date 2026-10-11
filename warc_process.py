@@ -1,28 +1,10 @@
 import argparse
 
-from datatrove.executor import SlurmPipelineExecutor, LocalPipelineExecutor
+from datatrove.executor import SlurmPipelineExecutor
 from datatrove.pipeline.readers import WarcReader
-from datatrove.pipeline.extractors import TrafilaturaMetadata, Trafilatura
+from datatrove.pipeline.extractors import TrafilaturaMetadata
 from datatrove.pipeline.writers.jsonl import JsonlWriter
 from datatrove.pipeline.filters import LambdaFilter
-from datatrove.utils.logging import logger
-from datatrove.pipeline.extractors.base import BaseExtractor
-
-
-class EnhancedWarcReader(WarcReader):
-    """ Custom WarcReader that logs errors and skips files that raise exceptions instead of stopping the task """
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-    def read_file(self, filepath: str):
-        from datatrove.utils.logging import logger
-        try:
-            yield from super().read_file(filepath)
-        except Exception as e:
-            logger.error(f"%%%%% Error processing file {filepath}: {e} %%%%%")
-
-
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Process WARC files: extract text with Trafilatura and filter Portuguese content."
